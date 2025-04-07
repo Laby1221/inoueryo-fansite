@@ -55,72 +55,9 @@ body{
 .is-subpage-active{
     display: block;
 }
-
-/* びじゅチューン作品一覧 */
-/* #container{
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    background-color: #ffffff;
-    width: 98%;
-    margin: 0px auto;
-    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
-  linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
-  background-size: 16px 16px;
-  background-repeat: repeat;
-  background-position: center center;
-  padding-top: 20px;
-    .item{
-        display: block;
-        width: 190px;
-        height: 264px;
-        height: 348px;
-        border-radius: 12px;
-        margin: 0 auto;
-        border: 1.5px solid #000;
-        background-color: #ffffff;
-        & img{
-            display: block;
-            width: 173px;
-            height: 98px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 1.5px solid #000;
-        }
-        & a{
-            display: block;
-            width: 173px;
-            height: 98px;
-            margin: 8px auto;
-            
-        }
-        
-    }
-
-} */
-
-.title{
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.model,.model-author,.model-year,.place{
-    width: 90%;
-    height: auto;
-    font-size: 13px;
-    border-bottom: 1.5px dashed #000;
-    margin: 6px auto;
-    padding: 3px;
-}
-
-
 /* びじゅチューン作品一覧年代別試作 */
 #year{
     width: 100%;
-    /* padding: 0px 10px; */
     min-height: 100vh;
     margin: 0px auto;
     background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
@@ -174,48 +111,6 @@ body{
     display: block;
     width: 46%;
 }
-/* .item{
-    display: block;
-    width: 190px;
-    height: 264px;
-    height: 348px;
-    border-radius: 12px;
-    margin: 0 auto;
-    border: 1.5px solid #000;
-    background-color: #ffffff;
-    & img{
-        display: block;
-        width: 173px;
-        height: 98px;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 1.5px solid #000;
-    }
-    & a{
-        display: block;
-        width: 173px;
-        height: 98px;
-        margin: 8px auto;
-        
-    }
-    
-}
-.title{
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-.model,.model-author,.model-year,.place{
-    width: 90%;
-    height: auto;
-    font-size: 13px;
-    border-bottom: 1.5px dashed #000;
-    margin: 6px auto;
-    padding: 3px;
-}
- */
-
-
 /* 相対でいこう */
 .item{
     display: block;
@@ -259,8 +154,6 @@ body{
     margin: 6px auto;
     padding: 3px;
 }
-
-
 
 /* キャラクター図鑑 */
 #tab{
@@ -316,17 +209,6 @@ background-repeat: repeat;
 background-position: center center;
 
 }
-
-/* #tab-1{
-    background-color: #F78DA7;
-}
-#tab-2{
-    background-color: #CF2E2E;
-}
-#tab-3{
-    background-color: #FF6900;
-} */
-
 .is-tab-page-active{
     display: flex;
     flex-wrap: wrap;
@@ -339,7 +221,6 @@ background-position: center center;
     padding: 16px;
     border-radius: 8px;
     border: 2px solid #000;
-
 
     & img{
         width: 164px;
