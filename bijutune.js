@@ -218,6 +218,9 @@ document.addEventListener("DOMContentLoaded", function () {
             processYear("2013", "year-1");
             processYear("2014", "year-2");
             processYear("2015", "year-3");
+            processYear("2016", "year-4");
+            processYear("2017", "year-5");
+            processYear("2018", "year-6");
         })
         .catch(error => console.error('Error loading JSON:', error));
 });
