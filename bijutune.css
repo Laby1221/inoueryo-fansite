@@ -119,7 +119,8 @@ body{
 
 /* びじゅチューン作品一覧年代別試作 */
 #year{
-    width: 96%;
+    width: 100%;
+    /* padding: 0px 10px; */
     min-height: 100vh;
     margin: 0px auto;
     background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
@@ -137,7 +138,7 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
     height: 28px;
-    padding: 16px 0px;
+    padding: 16px 10px;
     margin: 0 auto;
 }
 .year-btn{
@@ -156,13 +157,6 @@ body{
     background-color: #FFFF00;
     box-shadow: none;
 }
-.year-page-cover{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-}
 .year-page{
     width: 98%;
     margin: 0 auto;
@@ -171,23 +165,11 @@ body{
 .is-year-page-active{
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 16px;
+    container-type: inline-size;
 }
-/* #year-1{
-    background-color: #ab8df7;
-}
-#year-2{
-    background-color: #99fc8e;
-}
-#year-3{
-    background-color: #fcb48e;
-}
-#year-4{
-    background-color: #fc8ed0;
-}
-#year-5{
-    background-color: #9b8efc;
-} */
-.item{
+/* .item{
     display: block;
     width: 190px;
     height: 264px;
@@ -218,7 +200,6 @@ body{
     text-align: center;
     margin: 0 auto;
 }
-
 .model,.model-author,.model-year,.place{
     width: 90%;
     height: auto;
@@ -227,7 +208,53 @@ body{
     margin: 6px auto;
     padding: 3px;
 }
+ */
 
+
+/* 相対でいこう */
+.item{
+    display: block;
+    width: 46%;
+    height: 348px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1.5px solid #000;
+    background-color: #ffffff;
+    & img{
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1.5px solid #000;
+    }
+    & a{
+        display: block;
+        width: 90%;
+        aspect-ratio: 16/9;
+        margin: 8px auto;
+        
+    }
+    
+}
+@container (min-width: 500px) {
+    .item {
+        width: 190px;
+    }
+  }
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.model,.model-author,.model-year,.place{
+    width: 90%;
+    height: auto;
+    font-size: 13px;
+    border-bottom: 1.5px dashed #000;
+    margin: 6px auto;
+    padding: 3px;
+}
 
 
 
