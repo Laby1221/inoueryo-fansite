@@ -57,8 +57,7 @@ body{
 }
 
 /* びじゅチューン作品一覧 */
-
-#container{
+/* #container{
     width: 100%;
     display: flex;
     justify-content:space-between;
@@ -67,13 +66,12 @@ body{
     background-color: #ffffff;
     width: 98%;
     margin: 0px auto;
-    /* 方眼紙模様に必須のスタイル */
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
   linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
-background-size: 16px 16px;
-background-repeat: repeat;
-background-position: center center;
-padding-top: 20px;
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  padding-top: 20px;
     .item{
         display: block;
         width: 190px;
@@ -82,7 +80,6 @@ padding-top: 20px;
         border-radius: 12px;
         margin: 0 auto;
         border: 1.5px solid #000;
-        /* margin: 2px; */
         background-color: #ffffff;
         & img{
             display: block;
@@ -102,8 +99,7 @@ padding-top: 20px;
         
     }
 
-
-}
+} */
 
 .title{
     width: 100%;
@@ -119,6 +115,118 @@ padding-top: 20px;
     margin: 6px auto;
     padding: 3px;
 }
+
+
+/* びじゅチューン作品一覧年代別試作 */
+#year{
+    width: 98%;
+    min-height: 100vh;
+    margin: 0px auto;
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
+}
+#year-btn-cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    overflow: scroll;
+    height: 68px;
+    padding: 20px 0px;
+}
+.year-btn{
+    font-family: "Source Code Pro", monospace;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 16px;
+    width: 84px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    box-shadow: 4px 4px 4px #9c9c9c4f;
+    cursor: pointer;
+}
+.is-year-btn-active{
+    background-color: #CF2E2E;
+    box-shadow: none;
+}
+.year-page-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.year-page{
+    width: 98%;
+    margin: 0 auto;
+    display: none;
+}
+.is-year-page-active{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* #year-1{
+    background-color: #ab8df7;
+}
+#year-2{
+    background-color: #99fc8e;
+}
+#year-3{
+    background-color: #fcb48e;
+}
+#year-4{
+    background-color: #fc8ed0;
+}
+#year-5{
+    background-color: #9b8efc;
+} */
+.item{
+    display: block;
+    width: 190px;
+    height: 264px;
+    height: 348px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1.5px solid #000;
+    background-color: #ffffff;
+    & img{
+        display: block;
+        width: 173px;
+        height: 98px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1.5px solid #000;
+    }
+    & a{
+        display: block;
+        width: 173px;
+        height: 98px;
+        margin: 8px auto;
+        
+    }
+    
+}
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.model,.model-author,.model-year,.place{
+    width: 90%;
+    height: auto;
+    font-size: 13px;
+    border-bottom: 1.5px dashed #000;
+    margin: 6px auto;
+    padding: 3px;
+}
+
+
+
 
 /* キャラクター図鑑 */
 #tab{
@@ -189,7 +297,6 @@ background-position: center center;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-
 }
 .box{
     background-color: #ffffff;
