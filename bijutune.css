@@ -169,6 +169,11 @@ body{
     gap: 16px;
     container-type: inline-size;
 }
+.is-year-page-active::after{
+    content: "";
+    display: block;
+    width: 46%;
+}
 /* .item{
     display: block;
     width: 190px;
@@ -235,7 +240,6 @@ body{
         margin: 8px auto;
         
     }
-    
 }
 @container (min-width: 500px) {
     .item {
